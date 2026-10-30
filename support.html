@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Support – ChargeLog Portal</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1d1d1f;
+    --muted: #6e6e73;
+    --accent: #0066cc;
+    --rule: #d2d2d7;
+    --todo-bg: #fff3bf;
+    --todo-text: #5c4400;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --text: #f5f5f7;
+      --muted: #a1a1a6;
+      --accent: #2997ff;
+      --rule: #424245;
+      --todo-bg: #4a3b00;
+      --todo-text: #ffe58a;
+    }
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  }
+  main {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 3rem 16px 4rem;
+  }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .5rem; }
+  h2 { font-size: 1.25rem; margin: 2.25rem 0 .5rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); }
+  p, ul { margin: .6rem 0; }
+  li { margin: .35rem 0; }
+  a { color: var(--accent); }
+  .meta { color: var(--muted); }
+  address { font-style: normal; }
+  /* Platzhalter: vor der Veröffentlichung ersetzen, sonst bleiben sie gelb markiert. */
+  .todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 .25em; border-radius: 4px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Support – ChargeLog Portal</h1>
+  <p class="meta">Hilfe für die iPhone- und iPad-App zur Auswertung deiner Wallbox-Ladevorgänge.</p>
+
+  <h2>Kontakt</h2>
+  <p>Fragen, Fehler oder Wünsche: <a href="mailto:info@chargelogportal.de">info@chargelogportal.de</a></p>
+  <p>Bitte nenne die App-Version (Einstellungen in der App bzw. TestFlight) und dein Gerät, damit wir den Fehler nachvollziehen können. Schicke bitte keine Passwörter oder Zahlungsdaten.</p>
+
+  <h2>Meine Ladedaten werden nicht geladen</h2>
+  <p>Wenn die App eine Export-Datei deiner Wallbox nicht erkennt oder nicht lädt, hilft uns Folgendes, das Format nachzurüsten:</p>
+  <ul>
+    <li><strong>Wallbox:</strong> Hersteller und Modell (z. B. Alfen Eve, KEBA P30)</li>
+    <li><strong>Export:</strong> Wie hast du die Datei erstellt – in welcher App oder welchem Portal, über welchen Menüweg?</li>
+    <li><strong>Datei:</strong> die Originaldatei, wenn du magst. Sie hilft am meisten.</li>
+  </ul>
+  <p>Am einfachsten geht das in der App: Nach der Fehlermeldung beim Import auf <strong>„Format melden“</strong> tippen, Angaben ergänzen und die Meldung per Mail teilen. Die App zeigt dir vorab genau, was verschickt wird.</p>
+  <p><strong>Datenschutz:</strong> Die Originaldatei kann echte Daten enthalten (z. B. RFID-Tags, Lade&shy;zeiten). Sie wird nur verschickt, wenn du es ausdrücklich einschaltest. Du kannst Namen und Kennungen vorher selbst unkenntlich machen. Wir nutzen die Datei nur, um das Format zu unterstützen, und löschen sie danach.</p>
+
+  <h2>Häufige Fragen</h2>
+  <p><strong>Warum fehlen Ladevorgänge nach dem Import?</strong><br>Der Importbericht listet jede übersprungene Zeile mit Grund auf. Bereits vorhandene Ladevorgänge werden nicht doppelt angelegt.</p>
+  <p><strong>Warum fehlen die Kosten?</strong><br>Für den Zeitraum ist kein Strompreis hinterlegt (Einstellungen › Strompreise). Für einen Bericht kannst du beim Export einen abweichenden Preis eingeben.</p>
+  <p><strong>Wo liegen meine Backups?</strong><br>In iCloud Drive unter ChargeLog Portal › Backups (Dateien-App). Der iCloud-Abgleich ersetzt kein Backup.</p>
+  <p><strong>Welche Wallboxen werden unterstützt?</strong><br>Alfen/MyEve, Eve Connect, KEBA, Schneider EVlink, Solax/Huawei (Excel) und Fronius Wattpilot.</p>
+
+  <h2>Datenschutz</h2>
+  <p>Die <a href="https://www.chargelogportal.de/datenschutz-ios.html">Datenschutzerklärung</a> beschreibt, welche Daten die App verarbeitet.</p>
+</main>
+</body>
+</html>
